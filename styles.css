@@ -152,7 +152,7 @@ a:hover{
        
 }
 footer{
-  display: flex;
+  display: block;
   flex-wrap: wrap;
     height:250px;
     background-color: #2c3e50;
