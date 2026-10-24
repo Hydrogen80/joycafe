@@ -11,6 +11,7 @@
     margin-top:0;
    margin-bottom: 0;
   flex-wrap: wrap;
+  z-index: 10;
 }
 .title h2{
   display: flex;
@@ -168,13 +169,14 @@ footer{
   align-content: flex-end;
   position: absolute;
   right:10px;
+  
 }
 .footer_style>div{
   display:flex;
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: flex-end;
-
+margin-right: 15px;
   gap:30px;
   align-content: flex-end;
 }
@@ -185,7 +187,8 @@ display:grid;
   width:900px;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: 200px 300px;
-
+  column-gap:20px;
+  row-gap:60px;
  align-items:space-around;   /* Centers items vertically (block axis) */
   justify-items:space-around;
   align-content:baseline;
@@ -211,4 +214,38 @@ display:grid;
 .grid_content h3{
   color: #f8fafc;
   font-size:30px;
+}
+.list_menu{
+  display: block;
+  flex-direction: column;
+
+  
+  font-size:large;
+  position: absolute;
+  top:20px;
+  right:20px;
+ 
+  justify-content:baseline;
+  align-content:flex-end;
+  z-index: 5;
+}
+
+.list_menu li{
+  width: 150px;
+  height:50px;
+  display: block;
+  align-content: center;
+  border: 1px solid #f43f5e; 
+  background-color: #2c3e50;
+  text-align: center;
+}
+.list_menu a{
+  
+  background-color: #2c3e50;
+  text-decoration: none;
+  color: #f8fafc;
+  
+}
+a:hover{
+  text-decoration: none;
 }
