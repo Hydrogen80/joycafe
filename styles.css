@@ -8,9 +8,15 @@
     font-size:80px;
     justify-content: center;
     padding: 100px;
-    margin-top:100px;
-   margin-bottom: 200px;
+    margin-top:0;
+   margin-bottom: 0;
   flex-wrap: wrap;
+}
+.title h2{
+  display: flex;
+  color:#f8fafc;
+  font-size: 40px;
+  justify-content: center;
 }
 #mainDiv{
  margin-left: 600px;   
@@ -30,7 +36,7 @@ p{
    color: #405366;
     font-family: 'Lucida Sans';
     font-size:xx-large;
- margin:80px;
+margin-top: 80px;
   
 }
 
@@ -156,7 +162,13 @@ footer{
  
  
 }
-
+.footer_style{
+  display: flex;
+  justify-content:flex-end;
+  align-content: flex-end;
+  position: absolute;
+  right:10px;
+}
 .footer_style>div{
   display:flex;
   flex-wrap: wrap;
@@ -164,7 +176,7 @@ footer{
   justify-content: flex-end;
 
   gap:30px;
-  align-content: flex-start;
+  align-content: flex-end;
 }
 .grid_container{
   
@@ -172,13 +184,31 @@ display:grid;
   height:900px;
   width:900px;
   grid-template-columns: auto auto auto auto;
-  grid-template-rows: 200px 800px;
-  gap:30px;
- align-items: right;   /* Centers items vertically (block axis) */
-  justify-items: right;
-}.grid_container>div{
- height:200px;
-  width:300px;
-  color:#f43f5e;
+  grid-template-rows: 200px 300px;
+
+ align-items:space-around;   /* Centers items vertically (block axis) */
+  justify-items:space-around;
+  align-content:baseline;
+  margin-left: 400px;
+
+  
+}
+
+.grid_container>div{
+  display: flex;
+  color:rgb(107, 110, 114);
   background-color: #1e293b;
+  border: 14px solid #f43f5e;
+  font-size: 50px;
+  align-items: baseline;
+}
+.grid_content{
+  display:flex;
+  justify-content: center;
+  /*align-content: center;*/
+  align-items: center;
+}
+.grid_content h3{
+  color: #f8fafc;
+  font-size:30px;
 }
