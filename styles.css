@@ -1,6 +1,4 @@
-html, body { margin: 0; 
-           height:1900px;
-           width:1600px;}
+html, body { margin: 0;}
 
 .title {
     display: flex;
