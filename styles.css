@@ -139,7 +139,7 @@ display: flex;
 }
  .menu:hover a{
    border-bottom:1px solid #f8fafc; 
-  
+  border:0;
   }
 a:hover{
    
